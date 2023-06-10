@@ -11,10 +11,10 @@ export default {
         titleFont: ["Roboto", "sans-serif"]
       },
       colors: {
-        bodyColor: "#001F3F",
-        textColor: "#D1D4C9",
-        designColor: "#0D63A5",
-        titleRoundBg: "linear-gradient(135deg, rgba(120,204,109,.15) 0%, rgba(120,204,109,1%)",
+        bodyColor: "#26292B",
+        textColor: "#5F7ADB",
+        designColor: "#A2B2EE",
+        titleRoundBg: "linear-gradient(135deg, rgba(120,204,109,.15) 0%, rgba(120,204,109,1%))",
       },
       animation: {
         "spin-slow": "spin 15s linear infinite",
