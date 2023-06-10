@@ -1,9 +1,11 @@
+import ParticlesBackground from "./components/ParticlesBackground";
+
 function App() {
 
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hello new portfolio</h1>
-    </>
+    <div className="w-full h-screen font-bodyFont text-textColor relative">
+      <ParticlesBackground />
+    </div>
   )
 }
 
