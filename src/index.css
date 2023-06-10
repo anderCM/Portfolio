@@ -2,3 +2,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .borderTop{
+        @apply border-t-[1px] border-t-zinc-800;
+    }
+
+    .borderBot{
+        @apply border-b-[1px] border-b-zinc-800;
+    }
+
+    .borderRight{
+        @apply border-r-[1px] border-r-zinc-800;
+    }
+
+    .borderLeft{
+        @apply border-l-[1px] border-l-zinc-800;
+    }
+
+    .borderAll{
+        @apply border-[1px] border-zinc-800;
+    }
+}
