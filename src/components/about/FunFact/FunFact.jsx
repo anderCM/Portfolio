@@ -4,6 +4,7 @@ import { GiTeacher, GiNewspaper } from "react-icons/gi";
 import FunFactCard from './FunFactCard';
 
 const FunFact = () => {
+    alert('This portfolio is in progress. Please be patient to see the final result :)')
     return (
         <div className="px-0 grid grid-cols-1 md:grid-cols-4 pb-10">
             <FunFactCard icon={<GiTeacher />} description="4 mentees guiding" />

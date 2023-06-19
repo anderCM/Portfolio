@@ -1,12 +1,12 @@
 import React from 'react'
 import { FaUser, FaEnvelope } from 'react-icons/fa'
 import { IoIosPaper } from 'react-icons/io'
-import { MdWork, MdOutlineClose } from 'react-icons/md'
+import { MdWork } from 'react-icons/md'
 import { SiGooglechat } from 'react-icons/si'
 import { BsTelephonePlusFill } from 'react-icons/bs'
 
 import LeftBar from './components/home/LeftBar';
-import About from './components/about/about';
+import About from './components/about/About';
 
 const Home = () => {
     return (
