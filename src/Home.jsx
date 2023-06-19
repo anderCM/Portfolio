@@ -5,7 +5,8 @@ import { MdWork, MdOutlineClose } from 'react-icons/md'
 import { SiGooglechat } from 'react-icons/si'
 import { BsTelephonePlusFill } from 'react-icons/bs'
 
-import LeftBar from './components/home/LeftBar'
+import LeftBar from './components/home/LeftBar';
+import About from './components/about/About';
 
 const Home = () => {
     return (
@@ -59,7 +60,9 @@ const Home = () => {
             </div>
             <div className="w-full md:w-[94%] h-full bg-transparent flex flex-col md:flex-row items-center">
                 <LeftBar />
-                <div className="w-[95%] h-[95%] -mt-2 md:m-auto md:w-8/12 bg-bodyColor"></div>
+                <div className="w-[95%] h-[95%] -mt-2 md:m-auto md:w-8/12 bg-bodyColor">
+                    <About />
+                </div>
             </div>
         </div>
     )

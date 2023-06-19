@@ -7,14 +7,14 @@ import profilePhoto from '../../assets/images/anderson_photo.webp';
 
 const LeftBar = () => {
     const [titles] = useTypewriter({
-        words: ['Full-stak developer'],
+        words: ['Full-stak developer', 'ReactJs', 'PHP', 'Ruby on Rails', 'MySql', 'Postgresql', 'Linux'],
         loop: true,
         typeSpeed: 30,
         deleteSpeed: 20,
         delaySpeed: 2000
     })
     return (
-        <div className="w-full md:w-5/12 h-[50%] md:h-full bg-bodyColor rounded-2xl">
+        <div className="w-full md:w-5/12 h-[50%] md:h-full bg-bodyColor rounded-2xl shadow-textShadow z-10">
             <div className="w-full h-3/5 bg-black rounded-2xl">
                 <img className="w-full h-full object-contain "
                     src={profilePhoto}

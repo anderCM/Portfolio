@@ -3,24 +3,32 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .borderTop{
-        @apply border-t-[1px] border-t-zinc-800;
+@layer components {
+    .borderTop {
+        @apply border-t-[1px] border-t-zinc-700;
     }
 
-    .borderBot{
-        @apply border-b-[1px] border-b-zinc-800;
+    .borderBot {
+        @apply border-b-[1px] border-b-zinc-700;
     }
 
-    .borderRight{
-        @apply border-r-[1px] border-r-zinc-800;
+    .borderRight {
+        @apply border-r-[1px] border-r-zinc-700;
     }
 
-    .borderLeft{
-        @apply border-l-[1px] border-l-zinc-800;
+    .borderLeft {
+        @apply border-l-[1px] border-l-zinc-700;
     }
 
-    .borderAll{
-        @apply border-[1px] border-zinc-800;
+    .borderAll {
+        @apply border-[1px] border-zinc-700;
+    }
+
+    .aboutRightLi {
+        @apply text-zinc-400 text-base font-normal flex justify-between items-center border-b-[1px] border-gray-700 py-2;
+    }
+
+    .aboutRightLiSpan {
+        @apply bg-textColor text-black px-4 py-[1px] rounded-md;
     }
 }

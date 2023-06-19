@@ -29,7 +29,7 @@ export default {
       },
       boxShadow: {
         blueShadow: "0px 0px 188px -14px #0C3C78",
-        textShadow: "11px 0px 13px -15px #000"
+        textShadow: "11px 0px 13px -15px #5F7ADB"
       }
     },
   },
