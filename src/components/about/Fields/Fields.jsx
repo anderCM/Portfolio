@@ -20,7 +20,7 @@ const Fields = () => {
       <FieldCard
         icon={<DiReact />}
         title="Cross platform Mobile development"
-        description="I am specialize in creating visually appealing and highly functional websites, tailored to your unique needs and brand identity."
+        description=" I utilize robust frameworks and advanced techniques to ensure your app delivers a consistent user experience across iOS and Android devices, saving time and resources without compromising on functionality or aesthetics."
       />
       <FieldCard
         icon={<FcLinux />}

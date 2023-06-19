@@ -14,7 +14,7 @@ const AboutMe = () => {
                     <li className="aboutRightLi"><span className="aboutRightLiSpan">AGE:</span>28</li>
                     <li className="aboutRightLi"><span className="aboutRightLiSpan">RESIDENCE:</span>PERU</li>
                     <li className="aboutRightLi"><span className="aboutRightLiSpan">AVAILABILITY:</span>AVAILABLE</li>
-                    <li className="aboutRightLi"><span className="aboutRightLiSpan">AGE:</span>28</li>
+                    <li className="aboutRightLi"><span className="aboutRightLiSpan">LANGUAGES:</span>SP - EN</li>
                 </ul>
             </div>
         </div>

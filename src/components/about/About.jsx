@@ -1,6 +1,7 @@
 import Title from '../designs/Title';
 import AboutMe from './AboutMe';
 import Fields from './Fields/Fields';
+import FunFact from './FunFact/FunFact';
 
 const About = () => {
   return (
@@ -9,6 +10,8 @@ const About = () => {
       <AboutMe />
       <Title title="My" subtitle="Fields" />
       <Fields />
+      <Title title="Fun" subtitle="Fact" />
+      <FunFact />
     </section>
   )
 }
