@@ -14,7 +14,7 @@ const LeftBar = () => {
         delaySpeed: 2000
     })
     return (
-        <div className="w-full md:w-5/12 h-[50%] md:h-full bg-bodyColor rounded-2xl shadow-textShadow z-10">
+        <div className="w-full md:w-5/12 h-[50%] md:h-full bg-bodyColor rounded-2xl md:shadow-textShadow z-10">
             <div className="w-full h-3/5 bg-black rounded-2xl">
                 <img className="w-full h-full object-contain "
                     src={profilePhoto}

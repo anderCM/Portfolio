@@ -6,7 +6,7 @@ import { SiGooglechat } from 'react-icons/si'
 import { BsTelephonePlusFill } from 'react-icons/bs'
 
 import LeftBar from './components/home/LeftBar';
-import About from './components/about/About';
+import About from './components/about/about';
 
 const Home = () => {
     return (
@@ -61,7 +61,9 @@ const Home = () => {
             <div className="w-full md:w-[94%] h-full bg-transparent flex flex-col md:flex-row items-center">
                 <LeftBar />
                 <div className="w-[95%] h-[95%] -mt-2 md:m-auto md:w-8/12 bg-bodyColor">
-                    <About />
+                    <div className="w-full h-[96%] overflow-y-scroll scrollbar-thin scrollbar-thumb-[#5F7ADB]">
+                        <About />
+                    </div>
                 </div>
             </div>
         </div>
