@@ -11,20 +11,20 @@ import SkillCard from "./SkillCard";
 const Skills = () => {
     return (
         <div className="flex flex-wrap justify-center gap-2 mt-2">
-            <SkillCard icon={<AiOutlineHtml5 />} hoverColor="E34C26" />
-            <SkillCard icon={<TbBrandCss3 />} hoverColor="006EB9" />
-            <SkillCard icon={<TbBrandJavascript />} hoverColor="EDD61A" />
-            <SkillCard icon={<DiReact />} hoverColor="00D9F2" />
-            <SkillCard icon={<TbBrandRedux />} hoverColor="4C539B" />
-            <SkillCard icon={<TbBrandBootstrap />} hoverColor="7210F5" />
-            <SkillCard icon={<TbBrandTailwind />} hoverColor="17B6B7" />
-            <SkillCard icon={<FaPhp />} hoverColor="7479AE" />
-            <SkillCard icon={<DiRubyRough />} hoverColor="E0115F" />
-            <SkillCard icon={<SiRubyonrails />} hoverColor="CC0000" />
-            <SkillCard icon={<SiMysql />} hoverColor="00758F" />
-            <SkillCard icon={<SiPostgresql />} hoverColor="326590" />
-            <SkillCard icon={<BsGit />} hoverColor="EC512E" />
-            <SkillCard icon={<FaLinux />} hoverColor="F3AD00" />
+            <SkillCard icon={<AiOutlineHtml5 />} hoverColor="hover:text-[#E34C26]" />
+            <SkillCard icon={<TbBrandCss3 />} hoverColor="hover:text-[#006EB9]" />
+            <SkillCard icon={<TbBrandJavascript />} hoverColor="hover:text-[#EDD61A]" />
+            <SkillCard icon={<DiReact />} hoverColor="hover:text-[#00D9F2]" />
+            <SkillCard icon={<TbBrandRedux />} hoverColor="hover:text-[#4C539B]" />
+            <SkillCard icon={<TbBrandBootstrap />} hoverColor="hover:text-[#7210F5]" />
+            <SkillCard icon={<TbBrandTailwind />} hoverColor="hover:text-[#17B6B7]" />
+            <SkillCard icon={<FaPhp />} hoverColor="hover:text-[#7479AE]" />
+            <SkillCard icon={<DiRubyRough />} hoverColor="hover:text-[#E0115F]" />
+            <SkillCard icon={<SiRubyonrails />} hoverColor="hover:text-[#CC0000]" />
+            <SkillCard icon={<SiMysql />} hoverColor="hover:text-[#00758F]" />
+            <SkillCard icon={<SiPostgresql />} hoverColor="hover:text-[#326590]" />
+            <SkillCard icon={<BsGit />} hoverColor="hover:text-[#EC512E]" />
+            <SkillCard icon={<FaLinux />} hoverColor="hover:text-[#F3AD00]" />
 
         </div>
     )
