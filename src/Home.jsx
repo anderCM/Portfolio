@@ -7,6 +7,7 @@ import { BsTelephonePlusFill } from 'react-icons/bs'
 
 import LeftBar from './components/home/LeftBar';
 import About from './components/about/About';
+import Resume from './components/resume/Resume'
 
 const Home = () => {
     return (
@@ -62,7 +63,8 @@ const Home = () => {
                 <LeftBar />
                 <div className="w-[95%] h-[95%] -mt-2 md:m-auto md:w-8/12 bg-bodyColor">
                     <div className="w-full h-[96%] overflow-y-scroll scrollbar-thin scrollbar-thumb-[#5F7ADB]">
-                        <About />
+                        {/* <About /> */}
+                        <Resume />
                     </div>
                 </div>
             </div>
