@@ -1,15 +1,19 @@
-import React from 'react'
-import { FaUser, FaEnvelope } from 'react-icons/fa'
-import { IoIosPaper } from 'react-icons/io'
-import { MdWork } from 'react-icons/md'
-import { SiGooglechat } from 'react-icons/si'
-import { BsTelephonePlusFill } from 'react-icons/bs'
+import { useState } from 'react';
+import { motion } from "framer-motion";
+import { FaUser, FaEnvelope } from 'react-icons/fa';
+import { IoIosPaper } from 'react-icons/io';
+import { MdWork } from 'react-icons/md';
+import { SiGooglechat } from 'react-icons/si';
+import { BsTelephonePlusFill } from 'react-icons/bs';
 
 import LeftBar from './components/home/LeftBar';
 import About from './components/about/About';
-import Resume from './components/resume/Resume'
+import Resume from './components/resume/Resume';
+
 
 const Home = () => {
+    const [about, setAbout] = useState(true);
+    const [resume, setResume] = useState(false);
     return (
         <div className='w-[90%] h-[90%] md:w-[85%] md:h-[85%] bg-transparent text-white z-50 flex flex-col md:flex-row items-start justify-between'>
             <div className="w-full h:16 mb-4 md:w-16 md:h-96 md:mb-auto bg-transparent flex md:flex-col md:gap-4">
@@ -21,13 +25,13 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="w-[85%] h-12 rounded-2xl flex md:flex-col items-center justify-between md:w-full md:h-80 bg-bodyColor md:rounded-3xl py-6">
-                    <span className="w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group">
+                    <span onClick={() => setAbout(true) & setResume(false)} className="w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group">
                         <FaUser />
                         <span className="absolute text-black font-medium text-[0.6rem] md:text-xs bg-designColor px-3 py-0 md:px-4 md:py-[1px] rounded-xl left-1/2 -translate-x-1/2 md:left-auto md:right-0 md:translate-x-14 translate-y-7 md:translate-y-1 transition-all duration-300 z-20 opacity-0 group-hover:opacity-100">
                             ABOUT
                         </span>
                     </span>
-                    <span className="w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group">
+                    <span onClick={() => setResume(true) & setAbout(false)} className="w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group">
                         <IoIosPaper />
                         <span className="absolute text-black font-medium text-[0.6rem] md:text-xs bg-designColor px-3 py-0 md:px-4 md:py-[1px] rounded-xl left-1/2 -translate-x-1/2 md:left-auto md:right-0 md:translate-x-16 translate-y-7 md:translate-y-1 transition-all duration-300 z-20 opacity-0 group-hover:opacity-100">
                             RESUME
@@ -63,8 +67,16 @@ const Home = () => {
                 <LeftBar />
                 <div className="w-[95%] h-[95%] -mt-2 md:m-auto md:w-8/12 bg-bodyColor">
                     <div className="w-full h-[96%] overflow-y-scroll scrollbar-thin scrollbar-thumb-[#5F7ADB]">
-                        {/* <About /> */}
-                        <Resume />
+                        {about &&
+                            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
+                                <About />
+                            </motion.div>}
+
+                        {resume &&
+                            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
+                                <Resume />
+                            </motion.div>}
+
                     </div>
                 </div>
             </div>
